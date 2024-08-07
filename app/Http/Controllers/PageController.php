@@ -32,7 +32,7 @@ class PageController extends Controller
         return view('General.organisation', [
             'page' => 'Organisasi',
             'kepala' => Organisasi::firstWhere('position', 'KEPALA'),
-            'data' => Organisasi::where('position', '!=', 'KEPALA') -> latest() -> get()
+            'data' => Organisasi::where('position', '!=', 'KEPALA') -> get()
         ]);
     }
 

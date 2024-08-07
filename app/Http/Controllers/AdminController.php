@@ -28,11 +28,18 @@ class AdminController extends Controller
     }
 
         public function addBanner (Request $request) {
-            $request -> validate(['image' => 'required']);
+            $request -> validate([
+                'title' => 'required',
+                'image' => 'required'
+            ]);
 
+            $title = $request -> input('title');
             $image = $request -> file('image') -> store('bannerImages');
 
-            Banner::create(['image' => $image]);
+            Banner::create([
+                'title' => $title,
+                'image' => $image
+            ]);
 
             return redirect(url() -> previous()) -> with('success', 'Berhasil Menambahkan Data');
         }

@@ -22,10 +22,11 @@ use App\Http\Controllers\PageController;
 | Register, Login and Logout
 |--------------------------------------------------------------------------
 */
-Route::prefix('register') -> group(function () {
-    Route::get('/', [UserController::class, 'registerView']);
-    Route::post('/', [UserController::class, 'register']);
-});
+
+// Route::prefix('register') -> group(function () {
+//     Route::get('/', [UserController::class, 'registerView']);
+//     Route::post('/', [UserController::class, 'register']);
+// });
 Route::prefix('login') -> middleware('guest') -> group(function () {
     Route::get('/', [UserController::class, 'loginView']) -> name('login');
     Route::post('/', [UserController::class, 'authenticate']);
@@ -73,12 +74,12 @@ Route::get('/', [PageController::class, 'home']);
 Route::get('/Profil', [PageController::class, 'profile']);
 Route::get('/Organisasi', [PageController::class, 'organisasi']);
 Route::get('/Berita', [PageController::class, 'berita']);
-Route::get('/Proyek-riset', [PageController::class, 'proyekRiset']);
-Route::get('/Kegiatan', [PageController::class, 'kegiatan']);
-Route::get('/Produk', [PageController::class, 'produk']);
+// Route::get('/Proyek-riset', [PageController::class, 'proyekRiset']);
+// Route::get('/Kegiatan', [PageController::class, 'kegiatan']);
+// Route::get('/Produk', [PageController::class, 'produk']);
 Route::get('/{id}/{tipe}', [PageController::class, 'baca']);
 Route::get('/Kontak', [PageController::class, 'kontak']);
 
-Route::get('/linkstorage', function () {
-    Artisan::call('storage:link');
-});
+// Route::get('/linkstorage', function () {
+//     Artisan::call('storage:link');
+// });

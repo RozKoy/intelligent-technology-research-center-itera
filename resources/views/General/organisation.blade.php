@@ -1,4 +1,4 @@
-@extends('General.Template')
+@extends('General.template')
 
 @section('content')
 <div class="w-full min-h-screen">

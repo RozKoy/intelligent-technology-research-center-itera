@@ -1,4 +1,4 @@
-@extends('General.Template')
+@extends('General.template')
 
 @section('content')
 <div class="w-full min-h-screen">
@@ -29,7 +29,7 @@
 
 		</div>
 
-		<div class="p-3 shadow shadow-gold my-5 w-fit h-fit">
+		{{-- <div class="p-3 shadow shadow-gold my-5 w-fit h-fit">
 			
 			@if ($side1[0] || $side2[0] || $side3[0])
 				@if ($side1[0])
@@ -60,7 +60,7 @@
 				<p>Tidak Ada Rekomendasi</p>
 			@endif
 
-		</div>
+		</div> --}}
 
 	</div>
 

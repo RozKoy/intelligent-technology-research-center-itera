@@ -26,6 +26,11 @@
 		@csrf
 		<h1 class="font-bold text-center text-lg">Tambah Data</h1>
 
+		<div class="my-3">
+			<label for="title" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Judul</label>
+			<input type="text" id="title" name="title" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Masukkan Judul" required>
+		</div>
+
 		<input class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 my-5" id="image" name="image" type="file" accept="image/*" required>
 
 		<input type="submit" value="Tambah" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mx-auto">
@@ -37,6 +42,9 @@
 			@foreach ($data as $item)
 				<div class="flex w-3/5 sm:w-60 rounded-lg shadow m-2 overflow-hidden bg-gray-50 flex-col">
 					<div class="bg-[url({{ asset('storage/' . $item -> image) }})] bg-no-repeat bg-center bg-cover w-full aspect-[4/3]"></div>
+					<div class="flex flex-col items-center font-semibold text-center my-1">
+						<p>{{ $item -> title }}</p>
+					</div>
 					<a href="{{ url() -> current() . '/' . $item -> id }}" class="text-white bg-red-700 hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mx-auto my-2.5 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Hapus</a>
 				</div>
 			@endforeach
