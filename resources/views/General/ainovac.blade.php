@@ -3,7 +3,7 @@
 @section('content')
     <div class="min-h-screen w-full">
 
-        <div class="text-wrap relative flex min-h-screen flex-col items-center justify-center gap-4 bg-blue px-5 py-10 text-center text-lg md:gap-7 md:text-xl">
+        <div class="bg-[url('{{ asset('storage/Assets/ainovac/bg.png') }}')] bg-cover bg-center text-wrap relative flex min-h-screen flex-col items-center justify-center gap-4 bg-blue px-5 py-10 text-center text-lg md:gap-7 md:text-xl">
             <img src="{{ url(asset('storage/Assets/ainovac/title.png')) }}" alt="AI-NOVAC-logo" srcset="" class="w-[42rem]">
             <p class="uppercase text-goldsec">Artificial Intelligence Innovation and Application Competition</p>
             <div class="flex items-center justify-center gap-3 text-base text-white md:text-lg">
@@ -90,12 +90,13 @@
             </div>
         </div>
 
-        <div class="flex min-h-screen flex-col items-center justify-center gap-7 bg-blue px-2 py-10 text-sm text-blue md:px-5 md:text-base">
+        <div class="bg-[url('{{ asset('storage/Assets/ainovac/bg.png') }}')] bg-cover bg-bottom flex min-h-screen flex-col items-center justify-center gap-7 bg-blue px-2 py-10 text-sm text-blue md:px-5 md:text-base">
             <h2 class="flex flex-col items-center justify-center text-5xl font-bold uppercase text-goldsec md:text-7xl">
                 Jadwal
             </h2>
+            <img src="{{ url(asset('storage/Assets/ainovac/timeline.png')) }}" alt="" srcset="" class="w-11/12">
             <div class="flex max-md:flex-wrap w-full text-wrap max-md:text-center md:w-10/12 overflow-hidden rounded-full bg-white shadow shadow-goldsec">
-                <p class="w-full md:w-1/2 bg-goldsec py-3 px-1 text-center font-semibold">9 - 31 Agustus 2024</p>
+                <p class="w-full md:w-1/2 bg-goldsec py-3 px-1 text-center font-semibold">6 - 31 Agustus 2024</p>
                 <p class="px-3 py-3 w-full">Pendaftaran Peserta & Pengumpulan Dokumen Karya</p>
             </div>
             <div class="flex max-md:flex-wrap w-full text-wrap max-md:text-center md:w-10/12 overflow-hidden rounded-full bg-white shadow shadow-goldsec">
