@@ -6,7 +6,7 @@
         <div class="text-wrap relative flex min-h-screen flex-col items-center justify-center gap-4 px-5 py-10 text-center text-lg md:gap-7 md:text-xl">
             <img src="{{ url(asset('storage/Assets/ainovac/title.png')) }}" alt="AI-NOVAC-logo" srcset="" class="w-[42rem]">
             <p class="uppercase text-goldsec">Artificial Intelligence Innovation and Application Competition</p>
-            <div class="flex items-center justify-center gap-3 text-base text-white md:text-lg">
+            {{-- <div class="flex items-center justify-center gap-3 text-base text-white md:text-lg">
                 <div class="flex flex-col items-center justify-center">
                     <p id="day" class="text-5xl text-rose-500">00</p>
                     <p>Day</p>
@@ -26,8 +26,9 @@
                     <p id="second" class="text-5xl text-rose-500">00</p>
                     <p>Second</p>
                 </div>
-            </div>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScCpLIoxi_mUIlYZZXAFPHTwAnsM4_IY2QeHiJMwhWBSnD7uA/viewform" target="_blank" class="rounded-lg px-5 py-1.5 uppercase text-goldsec shadow-inner shadow-goldsec outline outline-1 outline-goldsec">Daftar Sekarang</a>
+            </div> --}}
+            {{-- <a href="https://docs.google.com/forms/d/e/1FAIpQLScCpLIoxi_mUIlYZZXAFPHTwAnsM4_IY2QeHiJMwhWBSnD7uA/viewform" target="_blank" class="rounded-lg px-5 py-1.5 uppercase text-goldsec shadow-inner shadow-goldsec outline outline-1 outline-goldsec">Daftar Sekarang</a> --}}
+            <a href="/" class="rounded-lg px-5 py-1.5 uppercase text-rose-500 shadow-inner shadow-rose-500 outline outline-1 outline-rose-500">Baca Pengumuman</a>
             <a href="https://drive.google.com/drive/folders/1X9KzRjxTojyZwvl-jFJaZ4XbRerlzFrC?usp=drive_link" target="_blank" class="rounded-lg px-5 py-1.5 uppercase text-goldsec shadow-inner shadow-goldsec outline outline-1 outline-goldsec">Panduan</a>
         </div>
 
@@ -91,7 +92,7 @@
             </div>
         </div>
 
-        <div class="flex min-h-24 flex-col items-center justify-center gap-7 px-2 py-10 text-sm text-blue md:px-5 md:text-base">
+        <div class="min-h-24 flex flex-col items-center justify-center gap-7 px-2 py-10 text-sm text-blue md:px-5 md:text-base">
             <h2 class="flex flex-col items-center justify-center text-5xl font-bold uppercase text-goldsec md:text-7xl">
                 Jadwal
             </h2>
@@ -118,8 +119,9 @@
             </div>
         </div>
 
-        <div class="flex h-30 min-h-min flex-col items-center justify-center gap-3 px-5 py-10 text-xl md:gap-5 md:text-3xl">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScCpLIoxi_mUIlYZZXAFPHTwAnsM4_IY2QeHiJMwhWBSnD7uA/viewform" target="_blank" class="rounded-lg px-5 py-1.5 uppercase text-goldsec shadow-inner shadow-goldsec outline outline-1 outline-goldsec">Daftar Sekarang</a>
+        <div class="h-30 flex min-h-min flex-col items-center justify-center gap-3 px-5 py-10 text-xl md:gap-5 md:text-3xl">
+            {{-- <a href="https://docs.google.com/forms/d/e/1FAIpQLScCpLIoxi_mUIlYZZXAFPHTwAnsM4_IY2QeHiJMwhWBSnD7uA/viewform" target="_blank" class="rounded-lg px-5 py-1.5 uppercase text-goldsec shadow-inner shadow-goldsec outline outline-1 outline-goldsec">Daftar Sekarang</a> --}}
+            <a href="/" class="rounded-lg px-5 py-1.5 uppercase text-rose-500 shadow-inner shadow-rose-500 outline outline-1 outline-rose-500">Baca Pengumuman</a>
             <a href="https://drive.google.com/drive/folders/1X9KzRjxTojyZwvl-jFJaZ4XbRerlzFrC?usp=drive_link" target="_blank" class="rounded-lg px-5 py-1.5 uppercase text-goldsec shadow-inner shadow-goldsec outline outline-1 outline-goldsec">Panduan</a>
         </div>
 

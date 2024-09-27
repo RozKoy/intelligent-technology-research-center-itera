@@ -14,6 +14,12 @@ use App\Models\Produk;
 
 class PageController extends Controller
 {
+    public function ainovacPengumuman()
+    {
+        return view('General.ainovacPengumuman', [
+            'page' => 'Pengumuman | AI Novac',
+        ]);
+    }
     public function ainovac()
     {
         return view('General.ainovac', [

@@ -79,10 +79,8 @@ Route::get('/Berita', [PageController::class, 'berita']);
 // Route::get('/Produk', [PageController::class, 'produk']);
 Route::get('/{id}/{tipe}', [PageController::class, 'baca']);
 Route::get('/Kontak', [PageController::class, 'kontak']);
-Route::get('/', [PageController::class, 'ainovac']);
-Route::get('/AI-NOVAC', function () {
-    return redirect('/');
-});
+Route::get('/AI-NOVAC', [PageController::class, 'ainovac']);
+Route::get('/', [PageController::class, 'ainovacPengumuman']);
 
 // Route::get('/linkstorage', function () {
 //     Artisan::call('storage:link');
