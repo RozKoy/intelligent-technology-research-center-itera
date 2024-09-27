@@ -74,7 +74,9 @@
             </div>
 
             <ul class="header-navbar flex w-full flex-wrap items-center justify-center p-2 text-center text-xs">
-                <li><a href="/" class="m-2 block w-24 rounded-md bg-white py-2 shadow hover:text-gold">BERANDA</a></li>
+                <li><a href="/" class="m-2 block w-24 rounded-md bg-gradient-to-br from-blue to-sky-800 py-2 font-semibold text-goldsec shadow hover:bg-gradient-to-tl hover:text-white transition-all duration-500">AI-NOVAC</a></li>
+                
+                <li><a href="/Beranda" class="m-2 block w-24 rounded-md bg-white py-2 shadow hover:text-gold">BERANDA</a></li>
 
                 <li id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" data-dropdown-trigger="click" class="m-2 flex w-24 cursor-default items-center justify-center rounded-md bg-white py-2 shadow hover:text-gold">PROFIL <svg class="ml-2.5 h-2.5 w-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
@@ -115,8 +117,6 @@
                 <li><a href="/Berita" class="m-2 block w-24 rounded-md bg-white py-2 shadow hover:text-gold">BERITA</a></li>
 
                 <li><a href="/Kontak" class="m-2 block w-24 rounded-md bg-white py-2 shadow hover:text-gold">KONTAK</a></li>
-
-                <li><a href="/AI-NOVAC" class="m-2 block w-24 rounded-md bg-gradient-to-br from-blue to-sky-800 py-2 font-semibold text-goldsec shadow hover:bg-gradient-to-tl hover:text-white transition-all duration-500">AI-NOVAC</a></li>
             </ul>
 
         </div>

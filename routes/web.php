@@ -68,9 +68,9 @@ Route::prefix('admin')->middleware('auth')->group(function () {
 |--------------------------------------------------------------------------
 */
 Route::get('/home', function () {
-    return redirect('/');
+    return redirect('/Beranda');
 });
-Route::get('/', [PageController::class, 'home']);
+Route::get('/Beranda', [PageController::class, 'home']);
 Route::get('/Profil', [PageController::class, 'profile']);
 Route::get('/Organisasi', [PageController::class, 'organisasi']);
 Route::get('/Berita', [PageController::class, 'berita']);
@@ -79,7 +79,10 @@ Route::get('/Berita', [PageController::class, 'berita']);
 // Route::get('/Produk', [PageController::class, 'produk']);
 Route::get('/{id}/{tipe}', [PageController::class, 'baca']);
 Route::get('/Kontak', [PageController::class, 'kontak']);
-Route::get('/AI-NOVAC', [PageController::class, 'ainovac']);
+Route::get('/', [PageController::class, 'ainovac']);
+Route::get('/AI-NOVAC', function () {
+    return redirect('/');
+});
 
 // Route::get('/linkstorage', function () {
 //     Artisan::call('storage:link');

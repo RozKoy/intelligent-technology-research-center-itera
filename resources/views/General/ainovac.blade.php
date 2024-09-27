@@ -1,9 +1,9 @@
 @extends('General.template')
 
 @section('content')
-    <div class="min-h-screen w-full">
+    <div class="min-h-screen w-full bg-blue bg-[url('{{ asset('storage/Assets/ainovac/bg.png') }}')] bg-cover bg-top">
 
-        <div class="bg-[url('{{ asset('storage/Assets/ainovac/bg.png') }}')] bg-cover bg-center text-wrap relative flex min-h-screen flex-col items-center justify-center gap-4 bg-blue px-5 py-10 text-center text-lg md:gap-7 md:text-xl">
+        <div class="text-wrap relative flex min-h-screen flex-col items-center justify-center gap-4 px-5 py-10 text-center text-lg md:gap-7 md:text-xl">
             <img src="{{ url(asset('storage/Assets/ainovac/title.png')) }}" alt="AI-NOVAC-logo" srcset="" class="w-[42rem]">
             <p class="uppercase text-goldsec">Artificial Intelligence Innovation and Application Competition</p>
             <div class="flex items-center justify-center gap-3 text-base text-white md:text-lg">
@@ -27,15 +27,16 @@
                     <p>Second</p>
                 </div>
             </div>
-            <a href="#" target="_blank" class="rounded-lg px-5 py-1.5 uppercase text-goldsec shadow-inner shadow-goldsec outline outline-1 outline-goldsec">Register Now</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScCpLIoxi_mUIlYZZXAFPHTwAnsM4_IY2QeHiJMwhWBSnD7uA/viewform" target="_blank" class="rounded-lg px-5 py-1.5 uppercase text-goldsec shadow-inner shadow-goldsec outline outline-1 outline-goldsec">Daftar Sekarang</a>
+            <a href="https://drive.google.com/drive/folders/1X9KzRjxTojyZwvl-jFJaZ4XbRerlzFrC?usp=drive_link" target="_blank" class="rounded-lg px-5 py-1.5 uppercase text-goldsec shadow-inner shadow-goldsec outline outline-1 outline-goldsec">Panduan</a>
         </div>
 
         <div class="text-wrap flex min-h-screen flex-col items-center justify-center gap-7 px-5 py-10 text-center text-xl md:text-3xl">
-            <h2 class="flex flex-col items-center justify-center text-5xl font-bold uppercase text-blue md:text-7xl">
+            <h2 class="flex flex-col items-center justify-center text-5xl font-bold uppercase text-goldsec md:text-7xl">
                 Tema
             </h2>
             <h4 class="rounded-full bg-blue px-5 py-2.5 text-goldsec">"Solusi Kecerdasan Buatan untuk Indonesia Emas 2045"</h4>
-            <h3 class="flex flex-col items-center justify-center text-3xl font-bold uppercase text-blue md:text-5xl">
+            <h3 class="flex flex-col items-center justify-center text-3xl font-bold uppercase text-goldsec md:text-5xl">
                 Sub-Tema
             </h3>
             <div class="flex min-h-max w-full flex-wrap items-center justify-center gap-3 text-2xl">
@@ -90,64 +91,46 @@
             </div>
         </div>
 
-        <div class="bg-[url('{{ asset('storage/Assets/ainovac/bg.png') }}')] bg-cover bg-bottom flex min-h-screen flex-col items-center justify-center gap-7 bg-blue px-2 py-10 text-sm text-blue md:px-5 md:text-base">
+        <div class="flex min-h-24 flex-col items-center justify-center gap-7 px-2 py-10 text-sm text-blue md:px-5 md:text-base">
             <h2 class="flex flex-col items-center justify-center text-5xl font-bold uppercase text-goldsec md:text-7xl">
                 Jadwal
             </h2>
-            <img src="{{ url(asset('storage/Assets/ainovac/timeline.png')) }}" alt="" srcset="" class="w-11/12">
-            <div class="flex max-md:flex-wrap w-full text-wrap max-md:text-center md:w-10/12 overflow-hidden rounded-full bg-white shadow shadow-goldsec">
-                <p class="w-full md:w-1/2 bg-goldsec py-3 px-1 text-center font-semibold">6 - 31 Agustus 2024</p>
-                <p class="px-3 py-3 w-full">Pendaftaran Peserta & Pengumpulan Dokumen Karya</p>
+            <!-- <img src="{{ url(asset('storage/Assets/ainovac/timeline.png')) }}" alt="" srcset="" class="w-11/12"> -->
+            <div class="text-wrap flex w-full overflow-hidden rounded-full bg-white shadow shadow-goldsec max-md:flex-wrap max-md:text-center md:w-10/12">
+                <p class="w-full bg-goldsec px-1 py-3 text-center font-semibold md:w-1/2">19 Agustus - 21 September 2024</p>
+                <p class="w-full px-3 py-3">Pendaftaran Peserta & Pengumpulan Dokumen Karya</p>
             </div>
-            <div class="flex max-md:flex-wrap w-full text-wrap max-md:text-center md:w-10/12 overflow-hidden rounded-full bg-white shadow shadow-goldsec">
-                <p class="w-full md:w-1/2 bg-goldsec py-3 px-1 text-center font-semibold">1 - 10 September 2024</p>
-                <p class="px-3 py-3 w-full">Seleksi Karya</p>
+            <div class="text-wrap flex w-full overflow-hidden rounded-full bg-white shadow shadow-goldsec max-md:flex-wrap max-md:text-center md:w-10/12">
+                <p class="w-full bg-goldsec px-1 py-3 text-center font-semibold md:w-1/2">15 September 2024 - 22 September 2024</p>
+                <p class="w-full px-3 py-3">Seleksi Karya</p>
             </div>
-            <div class="flex max-md:flex-wrap w-full text-wrap max-md:text-center md:w-10/12 overflow-hidden rounded-full bg-white shadow shadow-goldsec">
-                <p class="w-full md:w-1/2 bg-goldsec py-3 px-1 text-center font-semibold">12 September 2024</p>
-                <p class="px-3 py-3 w-full">Pengumuman Finalis</p>
+            <div class="text-wrap flex w-full overflow-hidden rounded-full bg-white shadow shadow-goldsec max-md:flex-wrap max-md:text-center md:w-10/12">
+                <p class="w-full bg-goldsec px-1 py-3 text-center font-semibold md:w-1/2">26 September 2024</p>
+                <p class="w-full px-3 py-3">Pengumuman Finalis</p>
             </div>
-            <div class="flex max-md:flex-wrap w-full text-wrap max-md:text-center md:w-10/12 overflow-hidden rounded-full bg-white shadow shadow-goldsec">
-                <p class="w-full md:w-1/2 bg-goldsec py-3 px-1 text-center font-semibold">19 September 2024</p>
-                <p class="px-3 py-3 w-full">Technical Meeting Finalis</p>
+            <div class="text-wrap flex w-full overflow-hidden rounded-full bg-white shadow shadow-goldsec max-md:flex-wrap max-md:text-center md:w-10/12">
+                <p class="w-full bg-goldsec px-1 py-3 text-center font-semibold md:w-1/2">26 September - 27 September 2024</p>
+                <p class="w-full px-3 py-3">Technical Meeting Finalis</p>
             </div>
-            <div class="flex max-md:flex-wrap w-full text-wrap max-md:text-center md:w-10/12 overflow-hidden rounded-full bg-white shadow shadow-goldsec">
-                <p class="w-full md:w-1/2 bg-goldsec py-3 px-1 text-center font-semibold">7 Oktober 2024</p>
-                <p class="px-3 py-3 w-full">Pelaksanaan Final & Pengumuman Pemenang</p>
+            <div class="text-wrap flex w-full overflow-hidden rounded-full bg-white shadow shadow-goldsec max-md:flex-wrap max-md:text-center md:w-10/12">
+                <p class="w-full bg-goldsec px-1 py-3 text-center font-semibold md:w-1/2">7 Oktober 2024</p>
+                <p class="w-full px-3 py-3">Pelaksanaan Final & Pengumuman Pemenang</p>
             </div>
         </div>
 
-        <div class="flex min-h-screen flex-col items-center justify-center gap-4 md:gap-7 px-5 py-10 text-xl md:text-3xl">
-            <div class="flex justify-center gap-3 text-xl text-blue">
-                <div class="flex flex-col items-center justify-center">
-                    <p id="day-b" class="text-5xl md:text-7xl text-rose-500">00</p>
-                    <p>Day</p>
-                </div>
-                <p>:</p>
-                <div class="flex flex-col items-center justify-center">
-                    <p id="hour-b" class="text-5xl md:text-7xl text-rose-500">00</p>
-                    <p>Hour</p>
-                </div>
-                <p>:</p>
-                <div class="flex flex-col items-center justify-center">
-                    <p id="minute-b" class="text-5xl md:text-7xl text-rose-500">00</p>
-                    <p>Minute</p>
-                </div>
-                <p>:</p>
-                <div class="flex flex-col items-center justify-center">
-                    <p id="second-b" class="text-5xl md:text-7xl text-rose-500">00</p>
-                    <p>Second</p>
-                </div>
-            </div>
-            <a href="#" target="_blank" class="rounded-lg bg-blue px-5 py-1.5 uppercase text-goldsec shadow shadow-blue transition-all duration-500 hover:px-7">Daftar Sekarang</a>
-            <a href="#" target="_blank" class="rounded-lg bg-blue px-5 py-1.5 uppercase text-goldsec shadow shadow-blue transition-all duration-500 hover:px-7">Panduan</a>
+        <div class="flex h-30 min-h-min flex-col items-center justify-center gap-3 px-5 py-10 text-xl md:gap-5 md:text-3xl">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScCpLIoxi_mUIlYZZXAFPHTwAnsM4_IY2QeHiJMwhWBSnD7uA/viewform" target="_blank" class="rounded-lg px-5 py-1.5 uppercase text-goldsec shadow-inner shadow-goldsec outline outline-1 outline-goldsec">Daftar Sekarang</a>
+            <a href="https://drive.google.com/drive/folders/1X9KzRjxTojyZwvl-jFJaZ4XbRerlzFrC?usp=drive_link" target="_blank" class="rounded-lg px-5 py-1.5 uppercase text-goldsec shadow-inner shadow-goldsec outline outline-1 outline-goldsec">Panduan</a>
         </div>
+
+        <!-- <div class="h-96 w-full bg-gradient-to-b from-blue to-white"></div> -->
 
     </div>
 
     @push('scripts')
         <script>
-            let countDownDate = new Date("{{ $deadline }}").getTime();
+            //let countDownDate = new Date("{{ $deadline }}").getTime();
+            let countDownDate = new Date("21 September 2024 23:59:59").getTime();
 
             let x = setInterval(function() {
 
@@ -169,11 +152,6 @@
                 document.getElementById("hour").innerHTML = hours < 10 ? '0' + hours : hours;
                 document.getElementById("minute").innerHTML = minutes < 10 ? '0' + minutes : minutes;
                 document.getElementById("second").innerHTML = seconds < 10 ? '0' + seconds : seconds;
-
-                document.getElementById("day-b").innerHTML = days < 10 ? '0' + days : days;
-                document.getElementById("hour-b").innerHTML = hours < 10 ? '0' + hours : hours;
-                document.getElementById("minute-b").innerHTML = minutes < 10 ? '0' + minutes : minutes;
-                document.getElementById("second-b").innerHTML = seconds < 10 ? '0' + seconds : seconds;
             }, 1000);
         </script>
     @endpush

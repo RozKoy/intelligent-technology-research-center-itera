@@ -9,7 +9,7 @@
 
 	<div class="flex-col items-center justify-center w-auto m-auto px-2 py-5">
 		
-		<div class="logo w-60 md:w-80 aspect-square bg-no-repeat bg-center bg-white bg-[length:70%] rounded-full shadow shadow-gold my-5 mx-auto"></div>
+		<div class="bg-[url('{{ asset('storage/Assets/ITRC.png') }}')] bg-black w-60 md:w-80 aspect-square bg-no-repeat bg-center bg-[length:70%] rounded-full shadow shadow-gold my-5 mx-auto"></div>
 		
 		<div>
 			<div class="text-2xl md:text-3xl text-red font-bold text-center">
